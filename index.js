@@ -10,7 +10,7 @@ const app = express();
 //~ middlewares
 app.use(express.json());
 app.use(cors());
-app.use('/api/v1', authRouter)
+app.use('/api/v1/auth', authRouter)
 
 app.listen(5000, () => {
   console.log(`🌟 👽 🌟 App lista en el puerto ${PORT}`);
